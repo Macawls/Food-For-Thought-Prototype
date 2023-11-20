@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using NaughtyAttributes;
+﻿using NaughtyAttributes;
 using UnityEngine;
 
 
@@ -14,8 +12,8 @@ public class Level : ScriptableObject
     [Button("Load Question Data")]
     public void LoadData()
     {
-        var jsonQuestions = JsonUtility.FromJson<Questions>(jsonFile.text);
-        questions = jsonQuestions;
+        var data = JsonUtility.FromJson<Questions>(jsonFile.text);
+        questions = data;
     }
     
     [Button("Clear Question Data")]
