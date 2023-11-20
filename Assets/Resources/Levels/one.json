@@ -1,0 +1,20 @@
+{
+  "levelQuestions": [
+    {
+      "content": "Test Question 1",
+      "answers": [
+        { "content": "Answer 1", "isCorrect": false },
+        { "content": "Answer 2", "isCorrect": true },
+        { "content": "Answer 3 (correct)", "isCorrect": true }
+      ]
+    },
+    {
+      "content": "Test Question 2",
+      "answers": [
+        { "content": "Answer 1", "isCorrect": false },
+        { "content": "Answer 2 (correct) ", "isCorrect": true },
+        { "content": "Answer 3", "isCorrect": false }
+      ]
+    }
+  ]
+}
