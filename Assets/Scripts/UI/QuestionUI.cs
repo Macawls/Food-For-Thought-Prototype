@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,27 +8,33 @@ public class QuestionUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI question;
     [SerializeField] private RectTransform answerContainer;
-    
 
-    [Header("Variables")] 
+
+    [Header("Variables")]
     [SerializeField] private AnswerUI answerPrefab;
-    [SerializeField] private AnswerHandlerUI answerHandlerUI;
+    [SerializeField] private AnswerClickHandlerUI answerClickHandlerUI;
 
 
     [Header("Events")] 
     [SerializeField] private UnityEvent<Question> onNewQuestion;
+    [SerializeField] private UnityEvent<List<AnswerUI>> onNewQuestionAnswerUI;
     [SerializeField] private UnityEvent onQuestionCleared;
 
     public void LoadQuestion(Question value)
     {
-        onNewQuestion?.Invoke(value);
         question.text = value.content;
-        
+        var answerUis = new List<AnswerUI>();
+
         foreach (var answer in value.answers)
         {
-            var answerUI = Instantiate(answerPrefab, answerContainer);
-            answerUI.Load(answer, answerHandlerUI.SelectAnswer);
+            var ui = Instantiate(answerPrefab, answerContainer); // spawn
+            ui.Load(answer, answerClickHandlerUI.SelectAnswer); // init with select callback
+            
+            answerUis.Add(ui);
         }
+        
+        onNewQuestion?.Invoke(value);
+        onNewQuestionAnswerUI?.Invoke(answerUis);
     }
 
     public void ClearQuestion()

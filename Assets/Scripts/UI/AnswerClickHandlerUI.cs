@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class AnswerHandlerUI : MonoBehaviour
+public class AnswerClickHandlerUI : MonoBehaviour
 {
     [SerializeField] private UnityEvent<Answer> onCorrectSelected;
     [SerializeField] private UnityEvent<Answer> onWrongSelected;

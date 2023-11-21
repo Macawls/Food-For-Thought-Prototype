@@ -8,12 +8,6 @@ public class TestLoadQuestionRuntime : MonoBehaviour
 
 
     public int currentIndex = 0;
-    public int currentQuestionCount;
-
-    private void Start()
-    {
-        currentQuestionCount = level.questions.levelQuestions.Count;
-    }
 
 
     public void LoadNextQuestion()
@@ -25,7 +19,7 @@ public class TestLoadQuestionRuntime : MonoBehaviour
             // next level or do something else
             return;
         }
-
+        
         questionUI.ClearQuestion();
         questionUI.LoadQuestion(level.questions.levelQuestions[currentIndex]);
     }
