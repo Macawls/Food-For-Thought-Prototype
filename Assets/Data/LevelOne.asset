@@ -12,30 +12,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721df3c8fd5c42969ec242a54298af59, type: 3}
   m_Name: LevelOne
   m_EditorClassIdentifier: 
-  jsonFile: {fileID: 4900000, guid: 189f70b15db7f044a8b5361343bace0d, type: 3}
+  jsonFile: {fileID: 4900000, guid: 54c001f2cf5ad7748a4e5fcdb1489a2d, type: 3}
   questions:
     levelQuestions:
-    - content: This is a Question 1?
+    - content: How did the COVID-19 pandemic impact food security in South Africa
+        in 2020?
       answers:
-      - content: Answer 1
+      - content: Food security improved
         isCorrect: 0
-      - content: Answer 2
-        isCorrect: 0
-      - content: Answer 3
+      - content: Almost 23.6% experienced moderate to severe food insecurity
         isCorrect: 1
-    - content: This is a Question 2?
+      - content: Food insecurity decreased by 14.9%
+        isCorrect: 0
+    - content: What is the main goal of the United Nations Sustainable Development
+        Goal 2 (SDG 2) related to food security by 2030?
       answers:
-      - content: Answer 1
+      - content: Ensuring access to clean water
         isCorrect: 0
-      - content: Answer 2
+      - content: Achieving zero hunger
         isCorrect: 1
-      - content: Answer 3
+      - content: Promoting gender equality
         isCorrect: 0
-    - content: This is a Question 3?
+    - content: Which population group in South Africa was least affected by moderate
+        to severe food insecurity in 2019?
       answers:
-      - content: Answer 1
-        isCorrect: 1
-      - content: Answer 2
+      - content: Black Africans
         isCorrect: 0
-      - content: Answer 3
+      - content: Coloureds
+        isCorrect: 0
+      - content: Indians/Asians and Whites
+        isCorrect: 1
+    - content: What is the impact of unemployment on household food security in South
+        Africa?
+      answers:
+      - content: Unemployment has no effect on food security
+        isCorrect: 0
+      - content: Unemployment contributes to loss of livelihoods and income
+        isCorrect: 1
+      - content: Unemployment only affects male-headed households
+        isCorrect: 0
+    - content: How did household engagement in agricultural activities change between
+        2017 and 2020 in South Africa?
+      answers:
+      - content: There was no change in household engagement
+        isCorrect: 0
+      - content: A decline in the proportion of households involved in agriculture
+        isCorrect: 0
+      - content: A significant increase in agricultural activities
+        isCorrect: 1
+    - content: How many South African households reported experiencing hunger in
+        2021?
+      answers:
+      - content: 1,1 million (6%)
+        isCorrect: 0
+      - content: 2,6 million (15%)
+        isCorrect: 0
+      - content: 2,1 million (11.6%)
+        isCorrect: 1
+    - content: What percentage of households with children aged five or younger reported
+        experiencing hunger in 2021?
+      answers:
+      - content: 8.5%
+        isCorrect: 0
+      - content: 13.6%
+        isCorrect: 0
+      - content: 20.1%
+        isCorrect: 1
+    - content: What proportion of households were involved in agricultural activities
+        in South Africa in 2021?
+      answers:
+      - content: 15%
+        isCorrect: 0
+      - content: 17.3%
+        isCorrect: 1
+      - content: 20%
+        isCorrect: 0
+    - content: How does employment status relate to household hunger in South Africa?
+      answers:
+      - content: No correlation between employment and hunger
+        isCorrect: 0
+      - content: Hunger is higher in households without an employed member
+        isCorrect: 1
+      - content: Hunger is higher in households with an employed member
+        isCorrect: 0
+    - content: Which continents were the worst affected by world hunger in 2021,
+        according to the Food and Agriculture Organization (FAO)?
+      answers:
+      - content: Europe and South America
+        isCorrect: 0
+      - content: Asia and Africa
+        isCorrect: 1
+      - content: North America and Australia
         isCorrect: 0

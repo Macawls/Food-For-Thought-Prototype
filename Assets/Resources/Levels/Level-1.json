@@ -1,0 +1,174 @@
+{
+  "levelQuestions": [
+    {
+      "content": "How did the COVID-19 pandemic impact food security in South Africa in 2020?",
+      "answers": [
+        {
+          "content": "Food security improved",
+          "isCorrect": false
+        },
+        {
+          "content": "Almost 23.6% experienced moderate to severe food insecurity",
+          "isCorrect": true
+        },
+        {
+          "content": "Food insecurity decreased by 14.9%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "content": "What is the main goal of the United Nations Sustainable Development Goal 2 (SDG 2) related to food security by 2030?",
+      "answers": [
+        {
+          "content": "Ensuring access to clean water",
+          "isCorrect": false
+        },
+        {
+          "content": "Achieving zero hunger",
+          "isCorrect": true
+        },
+        {
+          "content": "Promoting gender equality",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "content": "Which population group in South Africa was least affected by moderate to severe food insecurity in 2019?",
+      "answers": [
+        {
+          "content": "Black Africans",
+          "isCorrect": false
+        },
+        {
+          "content": "Coloureds",
+          "isCorrect": false
+        },
+        {
+          "content": "Indians/Asians and Whites",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "content": "What is the impact of unemployment on household food security in South Africa?",
+      "answers": [
+        {
+          "content": "Unemployment has no effect on food security",
+          "isCorrect": false
+        },
+        {
+          "content": "Unemployment contributes to loss of livelihoods and income",
+          "isCorrect": true
+        },
+        {
+          "content": "Unemployment only affects male-headed households",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "content": "How did household engagement in agricultural activities change between 2017 and 2020 in South Africa?",
+      "answers": [
+        {
+          "content": "There was no change in household engagement",
+          "isCorrect": false
+        },
+        {
+          "content": "A decline in the proportion of households involved in agriculture",
+          "isCorrect": false
+        },
+        {
+          "content": "A significant increase in agricultural activities",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "content": "How many South African households reported experiencing hunger in 2021?",
+      "answers": [
+        {
+          "content": "1,1 million (6%)",
+          "isCorrect": false
+        },
+        {
+          "content": "2,6 million (15%)",
+          "isCorrect": false
+        },
+        {
+          "content": "2,1 million (11.6%)",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "content": "What percentage of households with children aged five or younger reported experiencing hunger in 2021?",
+      "answers": [
+        {
+          "content": "8.5%",
+          "isCorrect": false
+        },
+        {
+          "content": "13.6%",
+          "isCorrect": false
+        },
+        {
+          "content": "20.1%",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "content": "What proportion of households were involved in agricultural activities in South Africa in 2021?",
+      "answers": [
+        {
+          "content": "15%",
+          "isCorrect": false
+        },
+        {
+          "content": "17.3%",
+          "isCorrect": true
+        },
+        {
+          "content": "20%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "content": "How does employment status relate to household hunger in South Africa?",
+      "answers": [
+        {
+          "content": "No correlation between employment and hunger",
+          "isCorrect": false
+        },
+        {
+          "content": "Hunger is higher in households without an employed member",
+          "isCorrect": true
+        },
+        {
+          "content": "Hunger is higher in households with an employed member",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "content": "Which continents were the worst affected by world hunger in 2021, according to the Food and Agriculture Organization (FAO)?",
+      "answers": [
+        {
+          "content": "Europe and South America",
+          "isCorrect": false
+        },
+        {
+          "content": "Asia and Africa",
+          "isCorrect": true
+        },
+        {
+          "content": "North America and Australia",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
