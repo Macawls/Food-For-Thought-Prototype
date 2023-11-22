@@ -5,4 +5,5 @@
 public class PlayerStats : ScriptableObject
 {
     public float speed;
+    public float turnSpeed;
 }

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public interface IPlayer
 {
+    Transform Transform { get; }
     AnimancerComponent Animancer { get; }
     Rigidbody Rigidbody { get; }
     PlayerStats Stats { get; }
     
-    public Vector2 InputDirection { get; }
+    Vector2 InputDirection { get; }
 }

@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour, IPlayer
     [Header("Components")]
     [SerializeField] private Rigidbody rb;
     [SerializeField] private AnimancerComponent animancerComponent;
+    public Transform Transform => transform;
     public AnimancerComponent Animancer => animancerComponent;
     public Rigidbody Rigidbody => rb;
     public PlayerStats Stats => stats;
@@ -49,6 +50,11 @@ public class PlayerController : MonoBehaviour, IPlayer
     private void Update()
     {
         fsm.Update(Time.deltaTime);
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     private void OnDisable()
