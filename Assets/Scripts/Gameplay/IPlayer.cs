@@ -8,6 +8,5 @@ public interface IPlayer
     AnimancerComponent Animancer { get; }
     Rigidbody Rigidbody { get; }
     PlayerStats Stats { get; }
-    
     Vector2 InputDirection { get; }
 }

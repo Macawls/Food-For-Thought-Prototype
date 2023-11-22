@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour, IPlayer
         fsm = new AutonomousBuilder<IPlayer>(this)
             .AddState(idle)
             .AddState(run)
-            .SetInitialState(nameof(Idle))
+            .SetInitialState<Idle>()
             .Build();
     }
 

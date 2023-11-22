@@ -27,7 +27,13 @@ namespace OceanFSM
             _mInitialStateID = stateID;
             return this;
         }
-
+        
+        public AutonomousBuilder<T> SetInitialState<TU>() where TU : State<T>
+        {
+            _mInitialStateID = typeof(TU).Name;
+            return this;
+        }
+        
         /// <summary>
         /// Adds a state to the state machine.
         /// </summary>
