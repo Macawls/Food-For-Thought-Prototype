@@ -839,6 +839,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 757646998}
     m_Modifications:
+    - target: {fileID: 1587563060242021065, guid: 66a0aba2ba55058439c92574558222ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208268272398597860, guid: 66a0aba2ba55058439c92574558222ac,
+        type: 3}
+      propertyPath: m_text
+      value: Press Space
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208268272398597860, guid: 66a0aba2ba55058439c92574558222ac,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 31.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208268272398597860, guid: 66a0aba2ba55058439c92574558222ac,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 66.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208268272398597860, guid: 66a0aba2ba55058439c92574558222ac,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208268272398597860, guid: 66a0aba2ba55058439c92574558222ac,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 6449296285370776043, guid: 66a0aba2ba55058439c92574558222ac,
         type: 3}
       propertyPath: m_Pivot.x
