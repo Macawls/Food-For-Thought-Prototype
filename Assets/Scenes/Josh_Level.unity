@@ -222,6 +222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Answer Button J
       objectReference: {fileID: 0}
+    - target: {fileID: 7628777111870968290, guid: fc61f988e170a024fb828998f2e17d87,
+        type: 3}
+      propertyPath: managedReferences[304460892398419968].Sfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e382d8a096d02845ac21485459cbbb7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc61f988e170a024fb828998f2e17d87, type: 3}
 --- !u!4 &167295381 stripped

@@ -156,18 +156,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7628777111870968290}
-        m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMF_Player, MoreMountains.Feedbacks
-        m_MethodName: PlayFeedbacks
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 3735407926748385726}
         m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMF_Player, MoreMountains.Feedbacks
         m_MethodName: PlayFeedbacks
@@ -675,7 +663,7 @@ MonoBehaviour:
     position: {x: 0, y: 1.8, z: 0}
   active:
     ease: 17
-    duration: 2
+    duration: 1.7
     position: {x: 0, y: 0.8, z: 0}
 --- !u!1 &5823585685177699318
 GameObject:
@@ -877,7 +865,7 @@ MonoBehaviour:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
           ContributeToTotalDuration: 1
-          InitialDelay: 0.8
+          InitialDelay: 1.5
           CooldownDuration: 0
           InterruptsOnStop: 1
           NumberOfRepeats: 0
@@ -895,7 +883,7 @@ MonoBehaviour:
           TargetBPM: 120
         Owner: {fileID: 3735407926748385726}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 9fa952431c184408b99b2f384bedb03d, type: 3}
+        Sfx: {fileID: 8300000, guid: 0e055fbba6acf48418cf9655da38e32b, type: 3}
         RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
@@ -906,10 +894,10 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 0.57
-        MaxPitch: 0.65
+        MinVolume: 0.721
+        MaxVolume: 0.895
+        MinPitch: 0.24
+        MaxPitch: 0.33
         PlaybackTime: {x: 0, y: 0}
         MmSoundManagerTrack: 0
         ID: 0
