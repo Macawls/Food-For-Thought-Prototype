@@ -1900,7 +1900,7 @@ MonoBehaviour:
           TargetBPM: 120
         Owner: {fileID: 9178296892897868078}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: cc77bb086a2f44ae2913be380ed8520b, type: 3}
+        Sfx: {fileID: 8300000, guid: 29b6ba407f1084566b319af5c0ed91f2, type: 3}
         RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
@@ -1911,8 +1911,8 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
-        MinVolume: 0.3
-        MaxVolume: 0.5
+        MinVolume: 0.52
+        MaxVolume: 0.68
         MinPitch: 0.85
         MaxPitch: 1.29
         PlaybackTime: {x: 0, y: 0}
@@ -7350,7 +7350,7 @@ MonoBehaviour:
           TargetBPM: 120
         Owner: {fileID: 9178296893587030469}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: a595a21e8a4864ab483b2711f0f52dc0, type: 3}
+        Sfx: {fileID: 8300000, guid: 67fc01c96477a412ba2a002f82bcfc06, type: 3}
         RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
@@ -7361,10 +7361,10 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
-        MinVolume: 0.28
-        MaxVolume: 0.58
-        MinPitch: 0.45
-        MaxPitch: 1.69
+        MinVolume: 0.15
+        MaxVolume: 0.34
+        MinPitch: 1.09
+        MaxPitch: 2.11
         PlaybackTime: {x: 0, y: 0}
         MmSoundManagerTrack: 0
         ID: 0

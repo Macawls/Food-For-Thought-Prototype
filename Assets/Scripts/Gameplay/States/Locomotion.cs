@@ -21,6 +21,7 @@ public class Locomotion : State<IPlayer>
     public override void OnEnter()
     {
         // set look direction here
+        _mLookDirection = Runner.Rigidbody.rotation;
         base.OnEnter();
         Runner.Animancer.Play(linearMixer);
     }
