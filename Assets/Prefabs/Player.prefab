@@ -1200,10 +1200,10 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
-        MinVolume: 0.15
-        MaxVolume: 0.34
-        MinPitch: 1.09
-        MaxPitch: 2.11
+        MinVolume: 1.16
+        MaxVolume: 1.5
+        MinPitch: 1.01
+        MaxPitch: 1.67
         PlaybackTime: {x: 0, y: 0}
         MmSoundManagerTrack: 0
         ID: 0
@@ -2113,8 +2113,8 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
-        MinVolume: 0.66
-        MaxVolume: 0.72
+        MinVolume: 1.36
+        MaxVolume: 1.8
         MinPitch: 1.53
         MaxPitch: 2.87
         PlaybackTime: {x: 0, y: 0}
@@ -7564,8 +7564,8 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
-        MinVolume: 0.096
-        MaxVolume: 0.159
+        MinVolume: 0.1
+        MaxVolume: 0.22
         MinPitch: 0.74
         MaxPitch: 1.24
         PlaybackTime: {x: 0, y: 0}

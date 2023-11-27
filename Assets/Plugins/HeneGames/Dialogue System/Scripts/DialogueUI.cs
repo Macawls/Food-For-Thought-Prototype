@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 namespace HeneGames.DialogueSystem
 {
@@ -36,11 +37,20 @@ namespace HeneGames.DialogueSystem
         [SerializeField] private GameObject dialogueWindow;
         [SerializeField] private GameObject interactionUI;
 
+        [SerializeField] private UnityEvent onNewLetter;
+
         [Header("Settings")]
         [SerializeField] private bool animateText = true;
 
         [Range(0.1f, 1f)]
         [SerializeField] private float textAnimationSpeed = 0.5f;
+
+
+        [SerializeField] private UnityEvent dialogueWindowOpen;
+        [SerializeField] private UnityEvent dialogueWindowClosed;
+
+        [SerializeField] private UnityEvent interactionUIOpen;
+        [SerializeField] private UnityEvent interactionUIClosed;
 
         [Header("Next sentence input")]
         public KeyCode actionInput = KeyCode.Space;
@@ -48,8 +58,8 @@ namespace HeneGames.DialogueSystem
         private void Start()
         {
             //Hide dialogue and interaction UI at start
-            dialogueWindow.SetActive(false);
-            interactionUI.SetActive(false);
+            //dialogueWindow.SetActive(false);
+            //interactionUI.SetActive(false);
         }
 
         private void Update()
@@ -89,7 +99,8 @@ namespace HeneGames.DialogueSystem
         {
             StopAllCoroutines();
 
-            dialogueWindow.SetActive(true);
+            //dialogueWindow.SetActive(true);
+            dialogueWindowOpen?.Invoke();
 
             portrait.sprite = _dialogueCharacter.characterPhoto;
             nameText.text = _dialogueCharacter.characterName;
@@ -106,12 +117,22 @@ namespace HeneGames.DialogueSystem
 
         public void ClearText()
         {
-            dialogueWindow.SetActive(false);
+            //dialogueWindow.SetActive(false);
+            dialogueWindowClosed?.Invoke();
         }
 
         public void ShowInteractionUI(bool _value)
         {
-            interactionUI.SetActive(_value);
+            if (_value == true)
+            {
+                interactionUIOpen?.Invoke();
+            }
+            else
+            {
+                interactionUIClosed?.Invoke();
+            }
+            
+            //interactionUI.SetActive(_value);
         }
 
         IEnumerator WriteTextToTextmesh(string _text, TextMeshProUGUI _textMeshObject)
@@ -123,6 +144,7 @@ namespace HeneGames.DialogueSystem
 
             foreach(char _letter in _letters)
             {
+                onNewLetter?.Invoke();
                 _textMeshObject.text += _letter;
                 yield return new WaitForSeconds(0.1f * _speed);
             }
