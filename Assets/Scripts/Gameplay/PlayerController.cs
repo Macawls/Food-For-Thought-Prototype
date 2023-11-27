@@ -6,19 +6,22 @@ using NaughtyAttributes;
 using OceanFSM;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour, IPlayer
 {
     [Header("Components")]
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private AnimancerComponent animancerComponent;
+    [SerializeField] private HybridAnimancerComponent animancerComponent;
+    [SerializeField] private PlayerAnimationFeedbacks animationFeedbacks;
     public Transform Transform => transform;
     public AnimancerComponent Animancer => animancerComponent;
     public Rigidbody Rigidbody => rb;
     public PlayerStats Stats => stats;
     public Vector2 InputDirection => inputVariable.Value;
-    
-    
+    public IPlayerAnimFeedbacks AnimFeedbacks => animationFeedbacks;
+
+
     [Header("Variables")]
     [SerializeField] private Vector2Variable inputVariable;
     [Expandable] [SerializeField] private PlayerStats stats;
@@ -26,39 +29,45 @@ public class PlayerController : MonoBehaviour, IPlayer
     
     [Header("States")]
     [SerializeField] private Idle idle;
-    [SerializeField] private Run run;
+    [SerializeField] private Locomotion locomotion;
 
-
-    
-
-    private IAutonomousMachine<IPlayer> fsm;
+    [Header("Events")] 
+    [SerializeField] private UnityEvent<State<IPlayer>> onNewState;
+    private IAutonomousMachine<IPlayer> _mFsm;
 
     private void Awake()
     {
-        fsm = new AutonomousBuilder<IPlayer>(this)
+        _mFsm = new AutonomousBuilder<IPlayer>(this)
             .AddState(idle)
-            .AddState(run)
+            .AddState(locomotion)
             .SetInitialState<Idle>()
             .Build();
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        fsm.Start();
-    }
-
-    private void Update()
-    {
-        fsm.Update(Time.deltaTime);
-    }
-
-    private void FixedUpdate()
-    {
-        
+        _mFsm.StateChanged += OnStateChanged;
     }
 
     private void OnDisable()
     {
-        fsm.Stop();
+        _mFsm.StateChanged -= OnStateChanged;
+        
+        _mFsm.Stop();
+    }
+
+    private void OnStateChanged(State<IPlayer> state)
+    {
+        onNewState?.Invoke(state);
+    }
+
+    private void Start()
+    {
+        _mFsm.Start();
+    }
+
+    private void Update()
+    {
+        _mFsm.Update(Time.deltaTime);
     }
 }

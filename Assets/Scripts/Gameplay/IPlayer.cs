@@ -9,4 +9,6 @@ public interface IPlayer
     Rigidbody Rigidbody { get; }
     PlayerStats Stats { get; }
     Vector2 InputDirection { get; }
+    
+    IPlayerAnimFeedbacks AnimFeedbacks { get; }
 }
