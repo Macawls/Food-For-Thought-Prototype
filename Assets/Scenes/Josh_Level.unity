@@ -2072,6 +2072,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1851806675459049081, guid: 09e66b07974fd384eb76f4d2983e3717,
+        type: 3}
+      propertyPath: managedReferences[304460887990730755].MaxPitch
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851806675459049081, guid: 09e66b07974fd384eb76f4d2983e3717,
+        type: 3}
+      propertyPath: managedReferences[304460887990730755].MinPitch
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851806675459049081, guid: 09e66b07974fd384eb76f4d2983e3717,
+        type: 3}
+      propertyPath: managedReferences[304460887990730755].MaxVolume
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851806675459049081, guid: 09e66b07974fd384eb76f4d2983e3717,
+        type: 3}
+      propertyPath: managedReferences[304460887990730755].MinVolume
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583717389519770121, guid: 09e66b07974fd384eb76f4d2983e3717,
+        type: 3}
+      propertyPath: m_Name
+      value: RunStepSound Grass
+      objectReference: {fileID: 0}
     - target: {fileID: 6867005251648888161, guid: 09e66b07974fd384eb76f4d2983e3717,
         type: 3}
       propertyPath: m_Enabled
@@ -2162,31 +2187,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 9178296892897868078, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
-      propertyPath: managedReferences[304460887990730755].Sfx
-      value: 
-      objectReference: {fileID: 8300000, guid: 67fc01c96477a412ba2a002f82bcfc06, type: 3}
-    - target: {fileID: 9178296892897868078, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
-      propertyPath: managedReferences[304460887990730755].MaxPitch
-      value: 2.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178296892897868078, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
-      propertyPath: managedReferences[304460887990730755].MinPitch
-      value: 1.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178296892897868078, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
-      propertyPath: managedReferences[304460887990730755].MaxVolume
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178296892897868078, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
-      propertyPath: managedReferences[304460887990730755].MinVolume
-      value: 0.03
-      objectReference: {fileID: 0}
     - target: {fileID: 9178296893132474698, guid: 09e66b07974fd384eb76f4d2983e3717,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2209,21 +2209,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9178296893247464169, guid: 09e66b07974fd384eb76f4d2983e3717,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178296893247464169, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178296893247464169, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178296893247464169, guid: 09e66b07974fd384eb76f4d2983e3717,
-        type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.161
       objectReference: {fileID: 0}
@@ -2241,6 +2226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UseGravity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178296893587030491, guid: 09e66b07974fd384eb76f4d2983e3717,
+        type: 3}
+      propertyPath: m_Name
+      value: RunStepSound Pop
       objectReference: {fileID: 0}
     - target: {fileID: 9178296893805505170, guid: 09e66b07974fd384eb76f4d2983e3717,
         type: 3}
