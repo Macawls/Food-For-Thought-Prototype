@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 6802552172062908902}
   - component: {fileID: 4925258692237817480}
   - component: {fileID: 9090068430254554595}
+  - component: {fileID: 6812230490646554138}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -212,6 +213,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 0.66
+--- !u!114 &6812230490646554138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645011666349643640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0848bff101191904ead4bb831f7084db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BlurFactor: 1
+  m_Style: 1
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 9, y: -9}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1113635082289076512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,6 +1458,7 @@ GameObject:
   - component: {fileID: 5900395927749741054}
   - component: {fileID: 5900395927749741052}
   - component: {fileID: 5900395927749741053}
+  - component: {fileID: 5966223464319163698}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1505,6 +1524,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1.15
+--- !u!114 &5966223464319163698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900395927749741055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0848bff101191904ead4bb831f7084db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BlurFactor: 1
+  m_Style: 1
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5.8, y: -5.8}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5900395927984237953
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -19,6 +20,19 @@ public class QuestionUI : MonoBehaviour
     [SerializeField] private UnityEvent<Question> onNewQuestion;
     [SerializeField] private UnityEvent<List<AnswerUI>> onNewQuestionAnswerUI;
     [SerializeField] private UnityEvent onQuestionCleared;
+
+    [SerializeField] private UnityEvent show;
+    [SerializeField] private UnityEvent hide;
+
+    public void Show()
+    {
+        show?.Invoke();
+    }
+
+    public void Hide()
+    {
+        hide?.Invoke();
+    }
 
     public void LoadQuestion(Question value)
     {

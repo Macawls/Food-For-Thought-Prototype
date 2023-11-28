@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Scriptable;
 using TMPro;
 using UnityEngine;
@@ -27,6 +28,24 @@ public class MissionWindowUI : MonoBehaviour
     
     public void Show(Mission mission)
     {
+        if (_mCurrent != null)
+        {
+            if (mission.missionName != _mCurrent.missionName)
+            {
+                // new one so clear old stuff
+                DOVirtual.DelayedCall(0.7f, () =>
+                {
+                    missionText.fontStyle = FontStyles.Normal;
+                });
+                
+                for (int i = 0; i < objectiveContainer.transform.childCount; i++)
+                {
+                    Destroy(objectiveContainer.GetChild(i).gameObject);
+                }
+
+            }
+        }
+        
         _mCurrent = mission;
         isActive = true;
         onShow?.Invoke();
@@ -48,8 +67,7 @@ public class MissionWindowUI : MonoBehaviour
     public void SetMission(Mission mission)
     {
         if (_mCurrent == null) return;
-
-        missionText.fontStyle &= ~FontStyles.Strikethrough; // remove
+        
         missionText.text = mission.missionName;
         missionDescription.text = mission.description;
         

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f877c69b1bd4ffeaf18983761d06dec, type: 3}
+  m_Name: talkToKaya
+  m_EditorClassIdentifier: 
+  missionName: Tutorial 2 - Who is that?
+  description: Use "space" to start talking
+  objectives:
+  - {fileID: 11400000, guid: 39d2a766c9811174aad104df128e2ddc, type: 2}
+  complete:
+    m_PersistentCalls:
+      m_Calls: []
