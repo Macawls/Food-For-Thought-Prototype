@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f877c69b1bd4ffeaf18983761d06dec, type: 3}
+  m_Name: MovementTutorial
+  m_EditorClassIdentifier: 
+  missionName: Tutorial 1 - Lets Move!
+  description: Learn to move around! WASD or Arrow Keys!
+  objectives:
+  - {fileID: 11400000, guid: f43cb930c6decce429c61ee62dfd834a, type: 2}
+  - {fileID: 11400000, guid: eb8334ee4be5f7e41984b7b28fdabeee, type: 2}
+  - {fileID: 11400000, guid: 690f47aaaf47c8c4698e41b6adc36167, type: 2}
+  - {fileID: 11400000, guid: c6aad4b3d89ca6c4593803d6c224e47c, type: 2}
+  complete:
+    m_PersistentCalls:
+      m_Calls: []
