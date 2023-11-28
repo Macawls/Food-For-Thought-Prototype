@@ -919,6 +919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mission: {fileID: 11400000, guid: 4d9908f9d35db2945a98b0a444ed1f76, type: 2}
+  questionUI: {fileID: 7752402462946859807}
+  level: {fileID: 11400000, guid: 80b24d60b9f4fda44950911f908811df, type: 2}
   end:
     m_PersistentCalls:
       m_Calls: []
@@ -11276,6 +11278,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7752402462946859807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3760577081261859868, guid: d9a0bb1059063dc4f9bc47eb71501bde,
+    type: 3}
+  m_PrefabInstance: {fileID: 6892284348458417923}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f028b8125bfb7c4da91185d90cc4214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7767614201710115477
 GameObject:
   m_ObjectHideFlags: 0
