@@ -1,13 +1,15 @@
 using System;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class AnswerUI : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
 {
     [SerializeField] private TextMeshProUGUI content;
+    [SerializeField] private Image colorImage;
+    public Image fillIMage;
     
     [Header("Events")] 
     [SerializeField] private UnityEvent<Answer> onLoaded;
@@ -54,5 +56,15 @@ public class AnswerUI : MonoBehaviour, IPointerEnterHandler, IPointerClickHandle
     public void Deselect()
     {
         onDeselected?.Invoke(_mValue);
+    }
+
+    public void SetFillAmount(float val)
+    {
+        fillIMage.fillAmount = val;
+    }
+
+    public void SetColor(Color val)
+    {
+        colorImage.color = val;
     }
 }

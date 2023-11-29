@@ -119,7 +119,12 @@ namespace HeneGames.DialogueSystem
 
             if(animateText)
             {
-                writingRoutine = StartCoroutine(WriteTextToTextmesh(_message, messageText));
+                if (gameObject.activeSelf)
+                {
+                    writingRoutine = StartCoroutine(WriteTextToTextmesh(_message, messageText));
+                }
+                
+                
             }
             else
             {
