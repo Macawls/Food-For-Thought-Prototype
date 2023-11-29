@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa4aac7fb2a54c9a8c2d7dd7433e69ca, type: 3}
   m_Name: talk
   m_EditorClassIdentifier: 
-  objectiveName: Talk To Kaya the Bird!
+  objectiveName: Talk to Kaya the Bird!
   description: 
-  isCompleted: 0
+  isCompleted: 1
   onComplete:
     m_PersistentCalls:
       m_Calls:

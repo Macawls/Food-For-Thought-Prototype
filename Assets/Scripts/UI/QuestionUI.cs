@@ -24,11 +24,13 @@ public class QuestionUI : MonoBehaviour
     [SerializeField] private UnityEvent show;
     [SerializeField] private UnityEvent hide;
 
+    [ContextMenu(nameof(Show))]
     public void Show()
     {
         show?.Invoke();
     }
-
+    
+    [ContextMenu(nameof(Hide))]
     public void Hide()
     {
         hide?.Invoke();

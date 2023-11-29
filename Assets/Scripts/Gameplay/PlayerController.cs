@@ -70,4 +70,9 @@ public class PlayerController : MonoBehaviour, IPlayer
     {
         _mFsm.Update(Time.deltaTime);
     }
+
+    public void GoToIdle()
+    {
+        _mFsm.ChangeState<Idle>();
+    }
 }

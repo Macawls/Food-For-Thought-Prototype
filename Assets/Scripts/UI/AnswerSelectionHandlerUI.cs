@@ -8,7 +8,7 @@ public class AnswerSelectionHandlerUI : MonoBehaviour
 {
     [Expandable][SerializeField] private ControlKeys controlKeys;
 
-    private LinkedList<AnswerUI> _mSelectionOptions;
+    private LinkedList<AnswerUI> _mSelectionOptions = new();
     private LinkedListNode<AnswerUI> _mCurrentNode;
 
     public void UpdateSelectionOptions(IEnumerable<AnswerUI> value)
@@ -24,6 +24,11 @@ public class AnswerSelectionHandlerUI : MonoBehaviour
 
     private void Update()
     {
+        if (_mSelectionOptions.Count == 0)
+        {
+            return;
+        }
+        
         if (controlKeys.up.Any(Input.GetKeyDown))
         {
            SelectNext();

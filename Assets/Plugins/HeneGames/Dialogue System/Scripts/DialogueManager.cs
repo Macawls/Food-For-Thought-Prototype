@@ -25,13 +25,18 @@ namespace HeneGames.DialogueSystem
         public UnityEvent startDialogueEvent;
         public UnityEvent nextSentenceDialogueEvent;
         public UnityEvent endDialogueEvent;
+        public UnityEvent dialogueRead;
 
         [Header("Dialogue")]
         [SerializeField] private TriggerState triggerState;
         [SerializeField] private List<NpcSentence> sentences = new List<NpcSentence>();
 
+        
+        
         private void Update()
         {
+            
+            
             //Timer
             if(coolDownTimer > 0f)
             {
@@ -213,10 +218,10 @@ namespace HeneGames.DialogueSystem
             //If last sentence stop dialogue and return
             if (currentSentence > sentences.Count - 1)
             {
+                dialogueRead?.Invoke();
                 StopDialogue();
 
                 lastSentence = true;
-
                 return;
             }
 

@@ -11,5 +11,6 @@ namespace HeneGames.DialogueSystem
         public UnityEvent startDialogueEvent;
         public UnityEvent nextSentenceDialogueEvent;
         public UnityEvent endDialogueEvent;
+        public UnityEvent onDialogueRead;
     }
 }

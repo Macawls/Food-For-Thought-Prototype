@@ -58,6 +58,7 @@ namespace HeneGames.DialogueSystem
         private Coroutine writingRoutine;
 
         public bool isWritingSentence;
+        public bool skipToNext;
 
         private void Start()
         {
@@ -71,7 +72,14 @@ namespace HeneGames.DialogueSystem
             //Next dialogue input
             if (Input.GetKeyDown(actionInput))
             {
-                NextSentence();
+                if (!isWritingSentence)
+                {
+                    NextSentence();
+                }
+                else
+                {
+                    skipToNext = true;
+                }
             }
         }
         public void NextSentence()
@@ -141,17 +149,27 @@ namespace HeneGames.DialogueSystem
 
         IEnumerator WriteTextToTextmesh(string _text, TextMeshProUGUI _textMeshObject)
         {
+            skipToNext = false;
             isWritingSentence = true;
             _textMeshObject.text = "";
             char[] _letters = _text.ToCharArray();
 
             float _speed = 1f - textAnimationSpeed;
 
+            
+            
             foreach(char _letter in _letters)
             {
                 onNewLetter?.Invoke();
                 _textMeshObject.text += _letter;
                 yield return new WaitForSeconds(0.1f * _speed);
+
+                if (skipToNext)
+                {
+                    _textMeshObject.text = _text;
+                    isWritingSentence = false;
+                    yield break;
+                }
             }
 
             isWritingSentence = false;
