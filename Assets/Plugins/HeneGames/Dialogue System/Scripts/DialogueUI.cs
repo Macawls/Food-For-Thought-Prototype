@@ -55,6 +55,10 @@ namespace HeneGames.DialogueSystem
         [Header("Next sentence input")]
         public KeyCode actionInput = KeyCode.Space;
 
+        private Coroutine writingRoutine;
+
+        public bool isWritingSentence;
+
         private void Start()
         {
             //Hide dialogue and interaction UI at start
@@ -107,7 +111,7 @@ namespace HeneGames.DialogueSystem
 
             if(animateText)
             {
-                StartCoroutine(WriteTextToTextmesh(_message, messageText));
+                writingRoutine = StartCoroutine(WriteTextToTextmesh(_message, messageText));
             }
             else
             {
@@ -137,6 +141,7 @@ namespace HeneGames.DialogueSystem
 
         IEnumerator WriteTextToTextmesh(string _text, TextMeshProUGUI _textMeshObject)
         {
+            isWritingSentence = true;
             _textMeshObject.text = "";
             char[] _letters = _text.ToCharArray();
 
@@ -148,6 +153,8 @@ namespace HeneGames.DialogueSystem
                 _textMeshObject.text += _letter;
                 yield return new WaitForSeconds(0.1f * _speed);
             }
+
+            isWritingSentence = false;
         }
     }
 }
